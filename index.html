@@ -1,49 +1,142 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nagelstudio Teslenko</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #ff6ec4, #7873f5);
-            color: #fff;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-        h1 { margin-top: 1em; }
-        section { background: rgba(0,0,0,0.4); margin: 1em; padding: 2em; border-radius: 15px; }
-        a.button {
-            display: inline-block;
-            margin-top: 1em;
-            padding: 12px 25px;
-            background: #b66b91;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-        }
-    </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nagelstudio Teslenko</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(135deg, #ff6ec4 0%, #7873f5 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header, section, footer {
+    max-width: 1000px;
+    margin: 2em auto;
+    background: rgba(0,0,0,0.3);
+    border-radius: 15px;
+    padding: 2em;
+    text-align: center;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+img {
+    max-width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    margin: 1em 0;
+}
+table {
+    width: 80%;
+    margin: 2em auto;
+    border-collapse: collapse;
+    background: rgba(0,0,0,0.4);
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background: #b66b91;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+.gallery img {
+    width: 200px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+.review {
+    background: rgba(0,0,0,0.4);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 15px;
+}
+.button {
+    display: inline-block;
+    background: #b66b91;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    font-size: 0.9em;
+}
+</style>
 </head>
 <body>
+<header>
     <h1>Nagelstudio Teslenko</h1>
-    <section>
-        <h2>Welkom!</h2>
-        <p>Hallo! Ik ben Olesya Teslenko en dit is mijn nagelstudio in Oldebroek.</p>
-        <p>Uw nagels verdienen het mooiste. Boek nu uw afspraak!</p>
-        <a class="button" href="https://wa.me/380637721069">Afspraak via WhatsApp</a>
-    </section>
-    <section>
-        <h2>Prijslijst</h2>
-        <p>Nagelverlenging: €50-55<br>
-        Gellak: €35-40<br>
-        Pedicure: €45-50<br>
-        Verwijderen: €10-15</p>
-    </section>
-    <footer>
-        <p>&copy; 2025 Nagelstudio Teslenko</p>
-    </footer>
+    <p>Uw nagels verdienen het mooiste!</p>
+</header>
+
+<section id="over-mij">
+    <h2>Over mij</h2>
+    <img src="https://i.imgur.com/9U9AkJ5.jpg" alt="Olesya Teslenko in blauwe jurk">
+    <p>Hallo! Ik ben <strong>Olesya Teslenko</strong>, trotse eigenaresse van Nagelstudio Teslenko in Oldebroek.
+    Nagelstyling is mijn passie. Ik help vrouwen zich nog mooier en zelfverzekerder voelen.</p>
+    <a class="button" href="https://wa.me/380637721069">Maak een afspraak via WhatsApp</a>
+</section>
+
+<section id="prijslijst">
+    <h2>Prijslijst</h2>
+    <table>
+        <tr><th>Dienst</th><th>Prijs</th></tr>
+        <tr><td>Nagelverlenging</td><td>€50 - €55</td></tr>
+        <tr><td>Nagelverlenging per nagel</td><td>€5</td></tr>
+        <tr><td>Gellak in één kleur</td><td>€35</td></tr>
+        <tr><td>Gellak met design (French, babyboomer of anders)</td><td>€40</td></tr>
+        <tr><td>Versteviging</td><td>+€5</td></tr>
+        <tr><td>Verwijderen gellak</td><td>€10</td></tr>
+        <tr><td>Pedicure nagels + lak</td><td>€45</td></tr>
+        <tr><td>Pedicure nagels + hele voet</td><td>€50</td></tr>
+        <tr><td>Verwijderen lak pedicure</td><td>€15</td></tr>
+    </table>
+</section>
+
+<section id="galerij">
+    <h2>Galerij</h2>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/200x200/?nail-art" alt="Nagelkunst">
+        <img src="https://source.unsplash.com/200x200/?manicure" alt="Manicure">
+        <img src="https://source.unsplash.com/200x200/?pedicure" alt="Pedicure">
+        <img src="https://source.unsplash.com/200x200/?nails" alt="Nails">
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>Klantenervaringen</h2>
+    <div class="review">"Altijd perfect gedaan. Mijn nagels zien er geweldig uit!" – Anne</div>
+    <div class="review">"Olesya is superlief en professioneel. Zeker een aanrader." – Lisa</div>
+    <div class="review">"Elke keer een feestje voor mijn handen. Dankjewel!" – Kim</div>
+</section>
+
+<section id="contact">
+    <h2>Contact & Socials</h2>
+    <p>📍 Oldebroek, Nederland</p>
+    <p>📱 <a class="button" href="https://wa.me/380637721069">WhatsApp</a></p>
+    <p>📷 <a class="button" href="https://www.instagram.com/nagelstudioteslenko">Instagram</a></p>
+    <p>📘 <a class="button" href="https://www.facebook.com/share/1SYpt2bbmm/">Facebook</a></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Nagelstudio Teslenko - Alle rechten voorbehouden.</p>
+</footer>
 </body>
 </html>
