@@ -6,64 +6,81 @@
     <title>Nagelstudio Teslenko</title>
     <style>
         body {
-            font-family: 'Playfair Display', serif;
-            background: linear-gradient(135deg, #ff69b4, #8a2be2);
-            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f78ca0, #f9748f, #fd868c, #fe9a8b);
+            color: #fff;
             margin: 0;
             padding: 0;
             text-align: center;
         }
         h1, h2 {
-            margin-top: 20px;
+            margin: 20px 0 10px;
         }
-        section {
-            background: rgba(0, 0, 0, 0.2);
-            margin: 20px;
-            padding: 20px;
-            border-radius: 15px;
+        p {
+            margin: 10px 20px;
+            font-size: 1.1em;
         }
         img {
-            max-width: 300px;
+            width: 200px;
             border-radius: 15px;
-            margin-top: 15px;
+            margin-top: 10px;
+        }
+        .card {
+            background: rgba(0,0,0,0.2);
+            border-radius: 15px;
+            margin: 20px;
+            padding: 20px;
+            display: inline-block;
+            max-width: 90%;
         }
         table {
             width: 80%;
-            margin: 0 auto;
+            margin: 0 auto 20px;
             border-collapse: collapse;
         }
-        td, th {
-            border-bottom: 1px solid #eee;
+        th, td {
+            border-bottom: 1px solid rgba(255,255,255,0.5);
             padding: 10px;
         }
         a.button {
             display: inline-block;
-            background: #ff69b4;
-            color: white;
-            padding: 12px 20px;
-            margin-top: 15px;
-            text-decoration: none;
+            background: #fff;
+            color: #f9748f;
+            padding: 12px 24px;
             border-radius: 25px;
-            transition: background 0.3s;
-        }
-        a.button:hover {
-            background: #ff1493;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <h1>Nagelstudio Teslenko</h1>
-    <p>Uw nagels verdienen het mooiste!</p>
+    <h2>Uw nagels verdienen het mooiste!</h2>
 
-    <section id="about">
+    <div class="card">
         <h2>Over mij</h2>
-        <img src="images/olesya-teslenko.jpg" alt="Olesya Teslenko">
-        <p>Hallo! Ik ben <strong>Olesya Teslenko</strong>, trotse eigenaresse van Nagelstudio Teslenko in Oldebroek. 
+        <img src="olesya.jpg" alt="Olesya Teslenko" />
+        <p>Hallo! Ik ben <strong>Olesya Teslenko</strong>, trotse eigenaresse van Nagelstudio Teslenko in Oldebroek.
         Nagelstyling is mijn passie. Ik help vrouwen zich nog mooier en zelfverzekerder te voelen.</p>
         <a href="https://wa.me/380637721069" class="button">Maak een afspraak via WhatsApp</a>
-    </section>
+    </div>
 
-    <section id="prijzen">
+    <div class="card">
         <h2>Prijslijst</h2>
         <table>
-            <tr><th>Dienst</th><th>Prijs
+            <tr><th>Dienst</th><th>Prijs</th></tr>
+            <tr><td>Nagelverlenging</td><td>€50 - €55</td></tr>
+            <tr><td>Gellak in één kleur</td><td>€35</td></tr>
+            <tr><td>Gellak met design (French, babyboomer of anders)</td><td>€40</td></tr>
+            <tr><td>Versteviging</td><td>€45</td></tr>
+            <tr><td>Verwijderen gellak</td><td>€10</td></tr>
+            <tr><td>Pedicure nagels + lak</td><td>€45</td></tr>
+            <tr><td>Pedicure nagels + hele voet</td><td>€50</td></tr>
+            <tr><td>Verwijderen lak pedicure</td><td>€15</td></tr>
+        </table>
+    </div>
+
+    <p>© 2025 Nagelstudio Teslenko</p>
+</body>
+</html>
